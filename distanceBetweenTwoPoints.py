@@ -8,7 +8,7 @@ x1,y1=int(input('Enter x1 : ')),int(input('Enter y1 : '))
 x2,y2=int(input('Enter x2 : ')),int(input('Enter y2 : '))
 
 def Euclidean(x1,y1,x2,y2) :
-    return (((y2-y1)**2+(x2-x1)**2)**(1/2))
+    return (((y2-y1)**2+(x2-x1)**2)**(1/2))                 # (a)**n finds the nth root of a
 
 d=Euclidean(x1,y1,x2,y2)
 print(d)
