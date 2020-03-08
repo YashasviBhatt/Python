@@ -1,4 +1,4 @@
-#Program for Calculator using if
+# Program for Calculator
 
 num1=0
 num2=0
