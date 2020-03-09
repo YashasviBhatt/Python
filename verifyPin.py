@@ -1,4 +1,5 @@
 # Program to verify pin
+# The Correct Pin for this program is 2014
 
 import time
 
