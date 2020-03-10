@@ -29,6 +29,7 @@ def SimpleColumnTT(input_message,order) :
 
 input_message=input("Enter Plain Text : ")
 order=[]
+print('Enter Order : ')
 for i in range(0,6) :
     o=int(input())
     if i>6 :
