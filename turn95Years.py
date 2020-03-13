@@ -2,8 +2,8 @@
 
 import datetime
 
-name=input('Enter Name')
-age=int(input('Enter Age'))
+name=input('Enter Name : ')
+age=int(input('Enter Age : '))
 now=datetime.datetime.now().year
 tage=(95-age)+now
-print('Year when you turn 95',tage)
+print('Hello {}, Year when you turn 95 : {}'.format(name,tage))
