@@ -29,7 +29,7 @@ def BinaryToDecimal(bin_num,bin_len):
 
         return dec_eqvlnt
 
-binary_input=int(input('Enter a Binary Number'))
+binary_input=int(input('Enter a Binary Number : '))
 bin_len=len(str(binary_input))
 # ensuring that the inserted binary should not be greater than 10
 # since it will be so much heavy for program
