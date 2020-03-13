@@ -6,7 +6,7 @@ import time
 pin_inputs=[]
 
 for inpt in range(0,3) :
-    i=int(input("Enter your Pin"))
+    i=int(input("Enter your Pin : "))
     pin_inputs.append(inpt)
     if i==2014 :
         print("Correct Pin")
