@@ -10,7 +10,7 @@ num1=input("Enter First Number\n")
 num2=input("Enter Second Number\n")
 c=input("Enter \n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n\nSo Your Coice is\n")
 
-if num1==0 and num2==0 and c==0 :
+if num1==0 and num2==0 or c==0 :
     print("Values Not Entered Properly")
 else :
     if c==1 :
