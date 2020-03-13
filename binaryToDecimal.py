@@ -1,4 +1,4 @@
-# Program to find the decimal equivalent of n digit binary number
+# Program to find the decimal equivalent of binary number having n digits
 
 def BinaryToDecimal(bin_num,bin_len):
     # creating a list enlisted with binary codes of decimal numbers
@@ -13,8 +13,8 @@ def BinaryToDecimal(bin_num,bin_len):
     if flag==0 :
         print('Invalid Binary Entered')
         exit()
-    # calculating the binary equivalent
 
+    # calculating the decimal equivalent
     else :
         while bin_num>=1 :
             dec_eqvlnt+=int(bin_num%10*multiplier)
@@ -28,9 +28,9 @@ bin_len=len(str(binary_input))
 
 # calling the BinaryToDecimal function that returns a value to a variable
 binary_eqvlnt=BinaryToDecimal(binary_input,bin_len)
-print('The Binary Equivalent of {} is {}'.format(binary_input,binary_eqvlnt))
+print('The Decimal Equivalent of {} is {}'.format(binary_input,binary_eqvlnt))
 
-# or directly you can use bin function in python which will return bin equivalent of number
+# you can use bin function in python which will return bin equivalent of number
 # a=int(input('Enter Binary'))
-# print(bin(a))  // it will return binary with 0b at the starting
-# print({:b}.format(a))   // it will return binary without 0b at starting
+# print(bin(a))  // it will return binary equivalent with 0b at the starting if inputted number is a decimal
+# print({:b}.format(a))   // it will return decimal equivalent
