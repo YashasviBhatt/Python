@@ -6,12 +6,6 @@ def BinaryToDecimal(bin_num,bin_len):
     multiplier=1
     dec_eqvlnt=0
 
-    # checking that the input binary number should contain max 4 digits
-    if len(str(bin_num)) > bin_len :
-        print('Binary Number Inserted Should be of 4 digits maximum')
-        exit()
-    # checking whether the entered binary os valid or not
-
     flag=0
     for num in binary_input_list :
         if str(bin_num)==num :
@@ -31,12 +25,6 @@ def BinaryToDecimal(bin_num,bin_len):
 
 binary_input=int(input('Enter a Binary Number : '))
 bin_len=len(str(binary_input))
-# ensuring that the inserted binary should not be greater than 10
-# since it will be so much heavy for program
-if bin_len>10 :
-    print('Value too Large (insert value less than or equals to of length 10)')
-    exit()
-
 
 # calling the BinaryToDecimal function that returns a value to a variable
 binary_eqvlnt=BinaryToDecimal(binary_input,bin_len)
