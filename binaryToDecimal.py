@@ -29,16 +29,16 @@ def BinaryToDecimal(bin_num,bin_len):
 
         return dec_eqvlnt
 
-bin_len=int(input('Enter the no of digits you want to insert (max 10)'))
+binary_input=int(input('Enter a Binary Number'))
+bin_len=len(str(binary_input))
 # ensuring that the inserted binary should not be greater than 10
 # since it will be so much heavy for program
 if bin_len>10 :
     print('Value too Large (insert value less than or equals to 10)')
     exit()
 
-binary_input=int(input('Enter a Binary Number of max {} digits'.format(bin_len)))
-# calling the BinaryToDecimal function that returns a value to a variable
 
+# calling the BinaryToDecimal function that returns a value to a variable
 binary_eqvlnt=BinaryToDecimal(binary_input,bin_len)
 print('The Binary Equivalent of {} is {}'.format(binary_input,binary_eqvlnt))
 
