@@ -34,7 +34,7 @@ bin_len=len(str(binary_input))
 # ensuring that the inserted binary should not be greater than 10
 # since it will be so much heavy for program
 if bin_len>10 :
-    print('Value too Large (insert value less than or equals to 10)')
+    print('Value too Large (insert value less than or equals to of length 10)')
     exit()
 
 
