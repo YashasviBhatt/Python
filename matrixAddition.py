@@ -6,6 +6,7 @@ from operator import add
 def CreateMatrix(size):
     matrix = []
     print('Enter {} Rows'.format(size))
+    print('Enter Values in the row in Single Line Separated with Space')
     for column in range(0, size):
         row = list(map(int, input().split()))          # it allows the user to input the values in single line
         # map() function returns an iterator after applying given function
@@ -28,6 +29,7 @@ def EvaluateMatrices(first_matrix, second_matrix, size):
         else:
             print('Values Stored in Matrices are not in Equal Number')
             exit()
+    return True
 
 
 def MatrixAddition(first_matrix, second_matrix):
@@ -39,18 +41,19 @@ def MatrixAddition(first_matrix, second_matrix):
 
 def matrix_print(first_matrix, second_matrix, resultant_matrix):
     size=len(first_matrix)
-    print('First Matrix')
+    print('\nFirst Matrix')
     [print(first_matrix[row]) for row in range(0, size)]
-    print('Second Matrix')
+    print('\nSecond Matrix')
     [print(second_matrix[row]) for row in range(0, size)]
-    print('Resultant Matrix after addition')
+    print('\nResultant Matrix after addition')
     [print(resultant_matrix[row]) for row in range(0, size)]
+    return True
 
 
 size=int(input('Enter Number of Columns : '))
-print('Enter First Matrix')
+print('\nEnter First Matrix')
 first_matrix=CreateMatrix(size)
-print('Enter Second Matrix')
+print('\nEnter Second Matrix')
 second_matrix=CreateMatrix(size)
 EvaluateMatrices(first_matrix, second_matrix, size)
 resultant_matrix=MatrixAddition(first_matrix, second_matrix)
