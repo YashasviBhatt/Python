@@ -36,7 +36,7 @@ def EvaluateRoman(input_roman_number):
             exit()
 
 
-# Creating method which will return the Natural Equivalent of the Inserted Roman Number
+# Creating method which will return the Natural Number Equivalent of the Inserted Roman Number
 # rule 1 : if I comes before X or V then the resultant number is 9 or 4 resp.
 # rule 2 : if I comes before C or L then the resultant number is 90 or 40 resp.
 # rule 1 : if I comes before M or D then the resultant number is 900 or 400 resp.
