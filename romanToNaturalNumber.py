@@ -3,7 +3,8 @@
 # method to evaluate the entered roman number
 # rule 1 : Entered Roman must only contains letters like I, V, X, L, C, D, M
 # rule 2 : A letter can only be appeared max 3 times at a time
-# rule 3 : In whole expression the max occurrence limit of any letter is only 3
+# rule 3 : Letters like V, L, D cannot appear more than 1 times
+# rule 4 : In whole expression the max occurrence limit of any letter is only 3
 def EvaluateRoman(input_roman_number):
     roman_lst = {}
 
@@ -30,13 +31,19 @@ def EvaluateRoman(input_roman_number):
         else:
             roman_lst[str_ptr] += 1
 
+    for str_ptr in input_roman_number:
+        if str_ptr == 'V' or str_ptr == 'L' or str_ptr == 'D':
+            if roman_lst[str_ptr] > 1:
+                print('Invalid Roman Entered')
+                exit()
+
     for dict_ptr in roman_lst:
         if roman_lst[dict_ptr] > 3:
             print('Invalid Roman Entered')
             exit()
 
 
-# Creating method which will return the Natural Number Equivalent of the Inserted Roman Number
+# Creating method which will return the Natural Equivalent of the Inserted Roman Number
 # rule 1 : if I comes before X or V then the resultant number is 9 or 4 resp.
 # rule 2 : if I comes before C or L then the resultant number is 90 or 40 resp.
 # rule 1 : if I comes before M or D then the resultant number is 900 or 400 resp.
