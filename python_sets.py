@@ -1,6 +1,5 @@
-s = {1, 1, 2, 3, 4}
+s = {1, 1, 2, 3, 4, 5}
 print(s)
-print(type(s))
 
 # set will store only distinct value and ignore duplicate values
 
@@ -10,4 +9,8 @@ print(type(s))
 lst = [1, 2, 3, 4]
 st = set(lst)
 
-print(type(st))
+print(st)
+
+print('Intersection :', s.intersection(st))
+print('Union :', s.union(st))
+print('Difference :', s.difference(st))
