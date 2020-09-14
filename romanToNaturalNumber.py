@@ -8,8 +8,8 @@
 def EvaluateRoman(input_roman_number):
     roman_lst = {}
 
-    flag = 0
     for str_ptr in input_roman_number:
+        flag = 0
         for lst_ptr in range(len(roman)):
             if str_ptr == roman[lst_ptr]:
                 flag = 1
@@ -38,10 +38,9 @@ def EvaluateRoman(input_roman_number):
                 exit()
 
     for dict_ptr in roman_lst:
-        if roman_lst[dict_ptr] > 3:
+        if roman_lst[dict_ptr] > 4:
             print('Invalid Roman Entered')
             exit()
-
 
 # Creating method which will return the Natural Equivalent of the Inserted Roman Number
 # rule 1 : if I comes before X or V then the resultant number is 9 or 4 resp.

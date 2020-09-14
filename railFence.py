@@ -1,4 +1,4 @@
-# Rail Fence : Classic Cipher Encryption Technique
+# Function Rail Fence
 # Created by Yashasvi Bhatt
 
 def RailFence(input_message) :
