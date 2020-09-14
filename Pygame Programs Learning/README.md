@@ -1,0 +1,1 @@
+please install pygame : ```pip install pygame```
