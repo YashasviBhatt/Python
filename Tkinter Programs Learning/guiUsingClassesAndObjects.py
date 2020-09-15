@@ -1,6 +1,6 @@
 from tkinter import *
 
-class GUI(Tk):
+class GUI(Tk):                                      # inheriting from Tk class
     def __init__(self):                             # creating a constructor for GUI setup
         super().__init__()                            # calling super class(Tk) constructor to provide functionality
         self.geometry('400x200')
