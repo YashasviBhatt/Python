@@ -1,1 +1,0 @@
-please install tkinter : ```pip install tkinter```
